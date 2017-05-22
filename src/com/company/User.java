@@ -4,7 +4,7 @@ import java.util.Random;
 
 
 public abstract class User {
-    private String id;
+    private String id = "";
 
     public void initialize() {
         Random r = new Random();
@@ -17,6 +17,6 @@ public abstract class User {
     }
 
     public void sendResults(Score score) {
-        System.out.println(score);
+        System.out.println("Użytkownik " + id + " otrzymał wynik " + score);
     }
 }

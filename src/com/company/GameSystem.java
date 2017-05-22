@@ -20,6 +20,9 @@ public class GameSystem {
     public void registerObserver(User u){
         observerList.add(u);
     }
+    public void registerObserverToGame(User u, Game g){
+        userToGameMap.put(u,g);
+    }
     public void kickObserver(User u){
         observerList.remove(u);
         userToGameMap.remove(u);
@@ -28,10 +31,10 @@ public class GameSystem {
         g.play();
     }
     Score getScore(Game g){
-        return g.getScore();
+        return scoresMap.get(g);
     }
     void setScore(Game g){
-
+        scoresMap.put(g, g.getScore());
     }
     public void notifyEveryone(){
         for (User user: observerList) {

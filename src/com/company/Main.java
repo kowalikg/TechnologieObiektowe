@@ -20,6 +20,14 @@ public class Main {
         Game g = new GameType1();
         System.out.println("Utworzono grę GameType1");
         sys.playGame(g);
+        sys.registerObserverToGame(ios, g);
+        sys.registerObserverToGame(windows, g);
+        sys.registerObserverToGame(black, g);
+        sys.registerObserverToGame(and, g);
+        System.out.println("System wykonał losowanie w grze GameType1");
+        sys.notifyEveryone();
+
+
 
 
 

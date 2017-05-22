@@ -5,6 +5,7 @@ import java.util.Random;
 
 /**
  * Created by Gabrysia on 22.05.2017.
+ *
  */
 public class GameType2 implements Game {
     private Score score;
