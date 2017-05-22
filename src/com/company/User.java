@@ -6,6 +6,11 @@ import java.util.Random;
 public abstract class User {
     private String id = "";
 
+    @Override
+    public String toString(){
+        return this.id;
+    }
+
     public void initialize() {
         Random r = new Random();
         for (int i = 0; i < 6; i++) {
@@ -17,6 +22,6 @@ public abstract class User {
     }
 
     public void sendResults(Score score) {
-        System.out.println("Użytkownik " + id + " otrzymał wynik " + score);
+        System.out.print("Użytkownik " + id + " otrzymał wynik " + score);
     }
 }
