@@ -13,7 +13,7 @@ public class GameType2 implements Game {
     @Override
     public void play() {
         Random r = new Random();
-        ArrayList list = new ArrayList();
+        ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i = 0; i < 100; i++){
             list.add(r.nextInt(100));
         }

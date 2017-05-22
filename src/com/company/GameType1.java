@@ -5,6 +5,7 @@ import java.util.Random;
 
 /**
  * Created by Gabrysia on 22.05.2017.
+ *
  */
 public class GameType1 implements Game {
     private Score score;
@@ -13,7 +14,7 @@ public class GameType1 implements Game {
     @Override
     public void play() {
         Random r = new Random();
-        ArrayList list = new ArrayList();
+        ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i = 0; i < 6; i++){
             list.add(r.nextInt(50));
         }

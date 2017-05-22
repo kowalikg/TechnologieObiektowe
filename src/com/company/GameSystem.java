@@ -7,7 +7,9 @@ import java.util.Map;
 
 /**
  * Created by Gabrysia on 22.05.2017.
+ *
  */
+
 public class GameSystem {
     public static int nextID;
 
@@ -32,8 +34,7 @@ public class GameSystem {
 
     }
     public void notifyEveryone(){
-        for (User user: observerList
-             ) {
+        for (User user: observerList) {
             user.sendResults(userToGameMap.get(user).getScore());
         }
     }
